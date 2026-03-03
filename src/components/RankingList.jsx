@@ -45,7 +45,8 @@ function SortableItem({ affirmation, index, id }) {
       sx={{
         position: 'relative',
         mb: { xs: 2.5, sm: 2 },
-        cursor: isDragging ? 'grabbing' : 'grab'
+        cursor: isDragging ? 'grabbing' : 'grab',
+        touchAction: 'none'
       }}
     >
       <AffirmationCard 
@@ -63,13 +64,13 @@ function RankingList({ affirmations, onReorder }) {
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {
-        distance: 8,
+        distance: 5,
       },
     }),
     useSensor(TouchSensor, {
       activationConstraint: {
-        delay: 200,
-        tolerance: 8,
+        delay: 0,
+        tolerance: 5,
       },
     }),
     useSensor(KeyboardSensor, {
