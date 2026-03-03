@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Box, Typography, Button, Stack, Paper, IconButton } from '@mui/material'
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
@@ -9,13 +9,12 @@ import { submitRankingResults } from '../services/resultsService'
 function RankingPage() {
   const navigate = useNavigate()
   const { affirmations, randomizeOrder } = useAffirmations()
-  const [currentOrder, setCurrentOrder] = useState(affirmations)
+  const [currentOrder, setCurrentOrder] = useState(() => randomizeOrder(affirmations))
   const startTimeRef = useRef(null)
 
   useEffect(() => {
-    setCurrentOrder(randomizeOrder(affirmations))
     startTimeRef.current = Date.now()
-  }, [affirmations, randomizeOrder])
+  }, [])
 
   const handleReorder = (newOrder) => {
     setCurrentOrder(newOrder)
