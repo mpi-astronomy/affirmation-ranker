@@ -1,16 +1,82 @@
-# React + Vite
+# Affirmation Ranker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mobile-friendly web application for ranking affirmations from least to most acceptable. Results are collected anonymously for statistical analysis.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Mobile-friendly** Material Design UI
+- **Drag-and-drop** sorting of 3 random affirmations
+- **Anonymous** result collection (stored in Firebase Firestore)
+- **Multiple surveys** support
+- **Admin dashboard** to view and export results as CSV
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + Vite
+- Material-UI (MUI)
+- Firebase Firestore (database)
+- Netlify (hosting)
 
-## Expanding the ESLint configuration
+## Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Deployment
+
+The site is deployed on Netlify. Push to main branch to deploy automatically.
+
+## Survey Management
+
+### Adding a New Survey
+
+1. Edit `src/data/affirmations.json`
+2. Add a new survey entry:
+
+```json
+{
+  "surveys": [
+    { "id": "pilot-2026", "name": "Pilot Survey 2026" },
+    { "id": "survey-2027", "name": "Survey 2027" }
+  ],
+  "affirmations": [...]
+}
+```
+
+3. Update the hardcoded `SURVEY_ID` in `src/pages/RankingPage.jsx`
+
+### Ranking Scale
+
+- **1** = Most acceptable (green)
+- **2** = Neutral / Gray zone (gray)
+- **3** = Least acceptable (red)
+
+## Admin Access
+
+The admin page is at `/admin` and allows:
+- Viewing all survey results
+- Filtering by survey
+- Exporting data as CSV
+
+## Authors
+
+- Morgan Fouesneau
+- Ivelina G. Momcheva
+
+Max Planck Institute for Astronomy
+Department of Data Science
+
+## Acknowledgments
+
+This application was primarily vibe-coded using [Kilocode](https://kilo.ai/cli) (v7.0.33) and the [MiniMax model](https://minimax.io/) (MiniMax-M2.5).
+
+## License
+
+MIT
