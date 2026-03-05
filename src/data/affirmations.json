@@ -1,157 +1,212 @@
 {
   "surveys": [
-    { "id": "pilot-2026", "name": "Pilot Survey 2026", "description": "Initial affirmation set" }
+    { "id": "pilot-2026", "name": "Pilot Survey 2026", "description": "AI Ethics Scenarios" }
   ],
   "affirmations": [
     {
       "id": 1,
-      "text": "I am worthy of love and respect.",
-      "category": "self-worth"
+      "text": "A researcher uses AI to generate compelling but entirely fictitious astronomical data to secure a prestigious grant. The AI fabricates data that perfectly matches desired, groundbreaking (but false) hypotheses.",
+      "category": "synthetic-content"
     },
     {
       "id": 2,
-      "text": "Every day I am growing stronger and wiser.",
-      "category": "growth"
+      "text": "A scientist uses AI to rewrite existing astronomical research from obscure journals, changing enough wording to evade plagiarism detectors and maybe update some citations. These papers are submitted to major journals as new research.",
+      "category": "synthetic-content"
     },
     {
       "id": 3,
-      "text": "I can handle whatever challenges come my way.",
-      "category": "resilience"
+      "text": "A research team develops an AI to automatically post on social media weaknesses of new papers by competing teams.",
+      "category": "competitive-posting"
     },
     {
       "id": 4,
-      "text": "I attract positive and healthy relationships.",
-      "category": "relationships"
+      "text": "An AI generates realistic but false images and 'expert' commentary on astronomical events to sway public opinion towards a commercially driven space agenda. This agenda ignores scientific merit and is pushed by private interests.",
+      "category": "synthetic-content"
     },
     {
       "id": 5,
-      "text": "My body is healthy and full of energy.",
-      "category": "health"
+      "text": "An AI tool suggests paper collaborators by prioritizing individuals with high citation counts and influential networks. This potentially overlooks early-career researchers or those with crucial but less visible contributions.",
+      "category": "collaborator-selection"
     },
     {
       "id": 6,
-      "text": "I am capable of achieving my goals.",
-      "category": "success"
+      "text": "An AI analyzes public data (seminars, pre-prints) to infer research directions of competing teams.",
+      "category": "research-inference"
     },
     {
       "id": 7,
-      "text": "I deserve all the good things life has to offer.",
-      "category": "self-worth"
+      "text": "Researchers use an AI to heavily tailor grant proposals with trending buzzwords to match funder priorities. This is done even if it slightly misrepresents core scientific goals, prioritizing funding over clear articulation.",
+      "category": "grant-optimization"
     },
     {
       "id": 8,
-      "text": "**I embrace change** as a chance to learn and evolve.",
-      "category": "growth"
+      "text": "An AI creates 'deepfake' lectures of deceased, renowned astronomers endorsing a controversial, poorly-supported theory.",
+      "category": "synthetic-content"
     },
     {
       "id": 9,
-      "text": "I bounce back from setbacks stronger than before.",
-      "category": "resilience"
+      "text": "A team makes a groundbreaking discovery using a novel AI but keeps the algorithm's source code and training data proprietary.",
+      "category": "proprietary-algorithms"
     },
     {
       "id": 10,
-      "text": "I communicate openly and honestly with loved ones.",
-      "category": "relationships"
+      "text": "An AI scheduling telescope time slightly favors proposals with certain characteristics irrespective of scientific justification and human prioritization.",
+      "category": "resource-allocation"
     },
     {
       "id": 11,
-      "text": "I nourish my body with healthy choices.",
-      "category": "health"
+      "text": "A professor uses an AI to generate entire reference letters, inputting only a student's CV. The AI fabricates specific examples of skills and positive personal anecdotes, presenting them as the professor's direct, nuanced observations.",
+      "category": "automated-references"
     },
     {
       "id": 12,
-      "text": "Success flows to me effortlessly.",
-      "category": "success"
+      "text": "A university committee uses AI to 'pre-screen' applications for a prestigious fellowship, flagging candidates based on keywords and institutional prestige from their CVs. This happens before human review.",
+      "category": "algorithmic-screening"
     },
     {
       "id": 13,
-      "text": "I am enough exactly as I am.",
-      "category": "self-worth"
+      "text": "A time allocation committee uses an AI system allocating research funds.",
+      "category": "resource-allocation"
     },
     {
       "id": 14,
-      "text": "I am constantly improving in every area of my life.",
-      "category": "growth"
+      "text": "An AI analyzes reviewers' biases from past grant decisions to tailor new submissions to exploit these preferences. The focus allows writers to shift from scientific merit to gaming the review system.",
+      "category": "reviewer-analysis"
     },
     {
       "id": 15,
-      "text": "Obstacles are just opportunities in disguise.",
-      "category": "resilience"
+      "text": "A lab uses AI to identify all potential discoveries, discouraging junior researchers from pursuing their own hypotheses. Projects that don't align with the AI's initial 'promising' leads are de-prioritized.",
+      "category": "hypothesis-prioritization"
     },
     {
       "id": 16,
-      "text": "I am a good listener and a supportive friend.",
-      "category": "relationships"
+      "text": "Faced with ambiguous data, a team uses an AI to generate several plausible interpretations. They then select and publish the one that best fits their pre-existing narrative.",
+      "category": "interpretation-selection"
     },
     {
       "id": 17,
-      "text": "I wake up feeling refreshed and energized.",
-      "category": "health"
+      "text": "The outreach office of an astronomical observatory uses an image generation bot to create realistic but not actual astronomical images based on recent publications and includes them with press releases.",
+      "category": "science-communication"
     },
     {
       "id": 18,
-      "text": "I am *destined for great things*.",
-      "category": "success"
+      "text": "An AI system used by a decadal review committee flags unconventional astronomical theories as 'low potential' suppressing innovative ideas that challenge the mainstream.",
+      "category": "peer-review"
     },
     {
       "id": 19,
-      "text": "I accept myself completely.",
-      "category": "self-worth"
+      "text": "An AI autonomously classifies millions of celestial objects which get published in a catalog with spot-check verification by researchers.",
+      "category": "autonomous-classification"
     },
     {
       "id": 20,
-      "text": "My potential is limitless.",
-      "category": "growth"
+      "text": "An AI, trained on historical data, is used by a TAC to rank and grant telescope time to researchers.",
+      "category": "resource-allocation"
     },
     {
       "id": 21,
-      "text": "I never give up, no matter what.",
-      "category": "resilience"
+      "text": "An AI is trained to find 'interesting' anomalies in sky surveys, but its definition of 'interesting' is skewed by its creators' existing research focus. This inadvertently biases the direction of new discoveries towards familiar phenomena.",
+      "category": "detection"
     },
     {
       "id": 22,
-      "text": "People appreciate my company.",
-      "category": "relationships"
+      "text": "An astronomer uses an AI to identify highly convincing, complex alien signals which they publish in influential journal.",
+      "category": "detection"
     },
     {
       "id": 23,
-      "text": "I am in tune with my body's needs.",
-      "category": "health"
+      "text": "An AI creates 'deepfake' lectures of (deceased or not) renowned astronomers to create scholar astronomy program.",
+      "category": "synthetic-content"
     },
     {
       "id": 24,
-      "text": "I am a magnet for opportunities.",
-      "category": "success"
+      "text": "An early-career researcher, feeling overwhelmed, uses an AI to generate the complete abstract for their important conference presentation. They submit it with only minor edits.",
+      "category": "writing-assistance"
     },
     {
       "id": 25,
-      "text": "I try my best and that's enough.",
-      "category": "self-worth"
+      "text": "A group of scientists trained an AI system on ArXiV papers to identify gaps and low-hanging fruits in research.",
+      "category": "literature-review"
     },
     {
       "id": 26,
-      "text": "I am open to learning new things.",
-      "category": "growth"
+      "text": "A reviewer uploads proposals to a commercial AI assistant to identify strengths, weaknesses of the proposed projects and also to rank them accordingly.",
+      "category": "peer-review"
     },
     {
       "id": 27,
-      "text": "I handle stress with grace and calm.",
-      "category": "resilience"
+      "text": "A scientist decided to translate an old stellar evolution code from Cobalt to Rust and uses Copilot for most of the heavy lifting.",
+      "category": "code-generation"
     },
     {
       "id": 28,
-      "text": "I value my relationships with others.",
-      "category": "relationships"
+      "text": "A team of instrument scientists constructed an AI to completely automate data reduction routine, data cleaning, previously done by researchers. New astronomers no longer need to develop these fundamental data handling skills.",
+      "category": "data-automation"
     },
     {
       "id": 29,
-      "text": "I take care of my physical wellbeing.",
-      "category": "health"
+      "text": "An AI algorithm dynamically schedules telescope observations to maximize high-priority targets based on conditions and peer-reviewed merit. The AI aims for fairness and efficiency using human-assigned scores.",
+      "category": "observation-scheduling"
     },
     {
       "id": 30,
-      "text": "I work towards my dreams every single day.",
-      "category": "success"
+      "text": "An AI is trained to recognize and remove known detector noise from astronomical images, leading to cleaner data for the community. Its methods are open-source and verifiable.",
+      "category": "image-processing"
+    },
+    {
+      "id": 31,
+      "text": "An AI identifies potential exoplanet transit signals in vast telescope datasets like Kepler or TESS. These AI-flagged candidates are then presented to human astronomers for review and confirmation.",
+      "category": "detection"
+    },
+    {
+      "id": 32,
+      "text": "An AI system controls adaptive optics on ground-based telescopes, compensating for atmospheric turbulence in real-time. This improves image quality for all researchers using the facility.",
+      "category": "adaptive-optics"
+    },
+    {
+      "id": 33,
+      "text": "Astronomers use AI-powered simulations to model complex events like galaxy mergers to test theories against observational data. These simulations and their results are openly shared.",
+      "category": "simulation"
+    },
+    {
+      "id": 34,
+      "text": "An AI helps astronomers quickly find and summarize relevant research papers from millions of publications. This prevents unintentional duplication, allows them to credit other researchers and fosters better-informed research.",
+      "category": "literature-review"
+    },
+    {
+      "id": 35,
+      "text": "An AI provides initial classifications in astronomical images for citizen science projects. Volunteers then verify these findings, democratizing research and processing large datasets.",
+      "category": "citizen-science"
+    },
+    {
+      "id": 36,
+      "text": "An AI model analyzes solar data to provide early warnings of hazardous solar flares. This information helps protect space assets and astronauts.",
+      "category": "hazard-prediction"
+    },
+    {
+      "id": 37,
+      "text": "An AI develops new algorithms to improve the resolution of existing telescope data, making faint objects clearer. The algorithm is published openly, benefiting the entire astronomical community.",
+      "category": "image-processing"
+    },
+    {
+      "id": 38,
+      "text": "A researcher uses an AI tool to analyze recent publications and talk abstracts from other key speakers at an upcoming conference. The AI helps identify current trends and common discussion points, allowing the researcher to better tailor their presentation to the audience's interests and ongoing dialogue.",
+      "category": "trend-analysis"
+    },
+    {
+      "id": 39,
+      "text": "A PhD student utilizes an AI-powered research assistant to scan, summarize, and categorize hundreds of academic papers relevant to their thesis. The AI helps identify key themes, methodologies, and gaps in the existing literature, enabling the student to focus their reading more effectively.",
+      "category": "literature-review"
+    },
+    {
+      "id": 40,
+      "text": "A researcher uses an AI writing assistant to check their grant proposal for clarity, conciseness, and grammatical accuracy. The AI provides suggestions for improving readability and impact, but all scientific content and claims remain the researcher's own.",
+      "category": "writing-assistance"
+    },
+    {
+      "id": 41,
+      "text": "A researcher with a learning disability that affects writing uses AI-powered dictation and advanced text-editing software to draft their research papers and grant proposals. This AI tool helps them articulate their scientific ideas effectively, leveling the playing field for their participation in academia.",
+      "category": "accessibility"
     }
   ]
 }
