@@ -6,7 +6,7 @@ import RankingList from '../components/RankingList'
 import { useAffirmations } from '../hooks/useAffirmations'
 import { submitRankingResults } from '../services/resultsService'
 
-const SURVEY_ID = 'pilot-2026'
+const SURVEY_ID = 'march-2026'
 
 function RankingPage() {
   const navigate = useNavigate()
@@ -51,11 +51,11 @@ function RankingPage() {
       </Box>
       
       <Typography variant="h1" component="h1" align="center" color="primary.dark">
-        Rank Your Affirmations
+        Rank the Scenarios
       </Typography>
       
       <Typography variant="body1" align="center" color="text.secondary" sx={{ mb: 2, px: 1 }}>
-        Arrange these affirmations from <strong>most acceptable (1)</strong> to <strong>least acceptable (3)</strong>
+        Arrange these AI use cases from <strong>most acceptable (1)</strong> to <strong>least acceptable (3)</strong>
       </Typography>
 
       <Paper elevation={0} sx={{ p: { xs: 1, sm: 2 }, bgcolor: 'grey.50', borderRadius: 2 }}>
