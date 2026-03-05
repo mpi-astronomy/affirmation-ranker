@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   Box,
   Card,
@@ -19,11 +20,12 @@ import {
   CircularProgress,
   Grid
 } from '@mui/material'
-import { Refresh as RefreshIcon, Download as DownloadIcon } from '@mui/icons-material'
+import { Refresh as RefreshIcon, Download as DownloadIcon, ArrowBack as ArrowBackIcon } from '@mui/icons-material'
 import { getSurveys } from '../services/surveyService'
 import { getResultsFromFirestore, getSurveyStats } from '../services/adminService'
 
 function AdminPage() {
+  const navigate = useNavigate()
   const surveys = getSurveys()
   const [selectedSurvey, setSelectedSurvey] = useState('')
   const [results, setResults] = useState([])
@@ -206,6 +208,16 @@ function AdminPage() {
           )}
         </CardContent>
       </Card>
+
+      <Box sx={{ mt: 4, display: 'flex', justifyContent: 'center' }}>
+        <Button
+          variant="outlined"
+          startIcon={<ArrowBackIcon />}
+          onClick={() => navigate('/')}
+        >
+          Back to Landing Page
+        </Button>
+      </Box>
     </Box>
   )
 }
