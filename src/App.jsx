@@ -6,6 +6,7 @@ import RankingPage from './pages/RankingPage'
 import RankingPageAbs from './pages/RankingPageAbs'
 import SuccessPage from './pages/SuccessPage'
 import AdminPage from './pages/AdminPage'
+import QRPage from './pages/QRPage'
 
 const theme = createTheme({
   palette: {
@@ -87,6 +88,7 @@ function App() {
             <Route path="/rank-abs" element={<RankingPageAbs />} />
             <Route path="/success" element={<SuccessPage />} />
             <Route path="/admin" element={<AdminPage />} />
+            <Route path="/qr" element={<QRPage />} />
           </Routes>
         </Container>
       </Box>
