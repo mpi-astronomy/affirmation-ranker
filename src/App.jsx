@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 import { ThemeProvider, createTheme } from '@mui/material/styles'
-import { CssBaseline, AppBar, Toolbar, Typography, Container, Box } from '@mui/material'
+import { CssBaseline, Container, Box } from '@mui/material'
 import LandingPage from './pages/LandingPage'
 import RankingPage from './pages/RankingPage'
+import RankingPageAbs from './pages/RankingPageAbs'
 import SuccessPage from './pages/SuccessPage'
 import AdminPage from './pages/AdminPage'
 
@@ -71,13 +72,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box sx={{ flexGrow: 1, minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-        <AppBar position="static" elevation={0} sx={{ bgcolor: 'primary.main' }}>
-          <Toolbar sx={{ minHeight: { xs: 56, sm: 64 } }}>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 600, fontSize: { xs: '1rem', sm: '1.25rem' } }}>
-              Affirmation Ranker
-            </Typography>
-          </Toolbar>
-        </AppBar>
+
         <Container 
           maxWidth="md" 
           sx={{ 
@@ -89,6 +84,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/rank" element={<RankingPage />} />
+            <Route path="/rank-abs" element={<RankingPageAbs />} />
             <Route path="/success" element={<SuccessPage />} />
             <Route path="/admin" element={<AdminPage />} />
           </Routes>

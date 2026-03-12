@@ -1,212 +1,64 @@
+[
+  {"id": 1, "text": "A researcher asks an LLM to suggest possible titles for a paper."},
+  {"id": 2, "text": "A researcher asks an LLM to suggest a structure for a research paper."},
+  {"id": 3, "text": "A researcher asks an LLM to generate keywords for their paper."},
+  {"id": 4, "text": "A researcher asks an LLM to shorten a proposal to meet a page limit, then checks the result carefully."},
+  {"id": 5, "text": "A researcher asks an LLM to rewrite sentences in a paper for clarity, then reviews the changes."},
+  {"id": 6, "text": "A non-native-English researcher asks an LLM to improve grammar and language in a paper, then reviews the result."},
+  {"id": 7, "text": "A researcher asks an LLM to suggest conference speakers on a topic."},
+  {"id": 8, "text": "A researcher asks an LLM to suggest related work they may have missed."},
+  {"id": 9, "text": "A researcher runs an LLM agent producing daily arXiv summaries to decide what papers to read."},
+  {"id": 10, "text": "A student asks an LLM to explain a mathematical concept."},
+
+  {"id": 11, "text": "A researcher asks an LLM to summarize a long paper before deciding whether to read it fully."},
+  {"id": 12, "text": "A researcher asks an LLM to suggest research questions for a new project."},
+  {"id": 13, "text": "A student asks an LLM to suggest possible thesis topics."},
+  {"id": 14, "text": "A researcher asks an LLM to generate code for a data analysis step, then checks the code carefully."},
+  {"id": 15, "text": "A researcher uses an LLM to extract structured data from a text file, then verifies the results."},
+  {"id": 16, "text": "A researcher asks an LLM to suggest keywords describing their research paper."},
+  {"id": 17, "text": "A professor asks an LLM to help design a lecture explaining a difficult concept."},
+  {"id": 18, "text": "A researcher asks an LLM to summarize referee reports before writing the response to reviewers."},
+  {"id": 19, "text": "A reviewer asks an LLM to suggest points to consider when reviewing a paper, without uploading the manuscript."},
+  {"id": 20, "text": "A researcher asks an LLM to generate a first draft outline for a grant proposal."},
+
+  {"id": 21, "text": "A researcher asks an LLM to write the introduction of a paper, then carefully revises it."},
+  {"id": 22, "text": "A researcher asks an LLM to write an abstract based on the paper text, then checks it before submission."},
+  {"id": 23, "text": "A researcher asks an LLM to write the discussion section from results and notes, then revises it."},
+  {"id": 24, "text": "A researcher trains an LLM on their own papers to generate first drafts of new manuscripts, which they edit carefully."},
+  {"id": 25, "text": "A researcher uses an LLM as their main tool for finding relevant papers in an unfamiliar field."},
+  {"id": 26, "text": "A professor asks an LLM to generate a project plan for a student, then revises it."},
+  {"id": 27, "text": "An instructor asks an LLM to generate exercise questions, then checks them carefully."},
+  {"id": 28, "text": "An instructor uses an LLM to grade assignments, then reviews the grades before releasing them."},
+  {"id": 29, "text": "A researcher asks an LLM to summarize a colleague’s research before meeting them."},
+  {"id": 30, "text": "A researcher uses two LLM agents debating the feasibility of a project as a brainstorming tool."},
+
+  {"id": 31, "text": "A researcher asks an LLM to write the introduction of a paper and submits it with minimal editing."},
+  {"id": 32, "text": "A researcher asks an LLM to write an abstract and submits it without checking carefully."},
+  {"id": 33, "text": "A researcher asks an LLM to write large parts of a paper, then lists only human authors."},
+  {"id": 34, "text": "A researcher asks an LLM to rewrite text from another paper to avoid similarity detection."},
+  {"id": 35, "text": "A researcher asks an LLM to generate references for a paper and adds them without verifying them."},
+  {"id": 36, "text": "A student asks an LLM to write a literature review and submits it without verifying citations."},
+  {"id": 37, "text": "An instructor uses an LLM to generate exam questions and uses them without checking."},
+  {"id": 38, "text": "An instructor uses an LLM to grade assignments and releases the grades without checking."},
+  {"id": 39, "text": "A researcher asks a public LLM to help debug code by pasting unpublished research data."},
+  {"id": 40, "text": "A researcher asks a public LLM to suggest improvements to an unpublished manuscript by pasting sections of it."},
+
+  {"id": 41, "text": "A reviewer uploads a confidential manuscript under peer review to a public LLM to draft a referee report."},
+  {"id": 42, "text": "A reviewer asks an LLM to write a referee report and submits it mostly unchanged."},
+  {"id": 43, "text": "A committee member uploads confidential grant proposals to a public LLM to summarize them."},
+  {"id": 44, "text": "A committee member uploads confidential recommendation letters to a public LLM to summarize them."},
+  {"id": 45, "text": "A researcher uploads proprietary telescope data to a public LLM to analyze it."},
+  {"id": 46, "text": "A researcher asks an LLM to generate missing data values and reports them as measurements."},
+  {"id": 47, "text": "A researcher asks an LLM to write a full review article and posts it to arXiv with minimal checking."},
+  {"id": 48, "text": "A committee uses an LLM to rank grant proposals by quality and novelty and uses the ranking directly."},
+  {"id": 49, "text": "A researcher uses LLM-generated analysis code in a paper without understanding or verifying it."},
+  {"id": 50, "text": "A researcher uses AI extensively while writing a paper but does not disclose the AI use despite journal policy requiring it."},
+  {
+  "id": 53,
+  "text": "A researcher uses an LLM to improve language and clarity in a paper but does not disclose it because they consider it similar to grammar-checking software."
+},
 {
-  "surveys": [
-    { "id": "march-2026", "name": "March 2026 Survey", "description": "AI Ethics Scenarios" }
-  ],
-  "affirmations": [
-    {
-      "id": 1,
-      "text": "A researcher uses AI to generate compelling but entirely fictitious astronomical data to secure a prestigious grant. The AI fabricates data that perfectly matches desired, groundbreaking (but false) hypotheses.",
-      "category": "synthetic-content"
-    },
-    {
-      "id": 2,
-      "text": "A scientist uses AI to rewrite existing astronomical research from obscure journals, changing enough wording to evade plagiarism detectors and maybe update some citations. These papers are submitted to major journals as new research.",
-      "category": "synthetic-content"
-    },
-    {
-      "id": 3,
-      "text": "A research team develops an AI to automatically post on social media weaknesses of new papers by competing teams.",
-      "category": "competitive-posting"
-    },
-    {
-      "id": 4,
-      "text": "An AI generates realistic but false images and 'expert' commentary on astronomical events to sway public opinion towards a commercially driven space agenda. This agenda ignores scientific merit and is pushed by private interests.",
-      "category": "synthetic-content"
-    },
-    {
-      "id": 5,
-      "text": "An AI tool suggests paper collaborators by prioritizing individuals with high citation counts and influential networks. This potentially overlooks early-career researchers or those with crucial but less visible contributions.",
-      "category": "collaborator-selection"
-    },
-    {
-      "id": 6,
-      "text": "An AI analyzes public data (seminars, pre-prints) to infer research directions of competing teams.",
-      "category": "research-inference"
-    },
-    {
-      "id": 7,
-      "text": "Researchers use an AI to heavily tailor grant proposals with trending buzzwords to match funder priorities. This is done even if it slightly misrepresents core scientific goals, prioritizing funding over clear articulation.",
-      "category": "grant-optimization"
-    },
-    {
-      "id": 8,
-      "text": "An AI creates 'deepfake' lectures of deceased, renowned astronomers endorsing a controversial, poorly-supported theory.",
-      "category": "synthetic-content"
-    },
-    {
-      "id": 9,
-      "text": "A team makes a groundbreaking discovery using a novel AI but keeps the algorithm's source code and training data proprietary.",
-      "category": "proprietary-algorithms"
-    },
-    {
-      "id": 10,
-      "text": "An AI scheduling telescope time slightly favors proposals with certain characteristics irrespective of scientific justification and human prioritization.",
-      "category": "resource-allocation"
-    },
-    {
-      "id": 11,
-      "text": "A professor uses an AI to generate entire reference letters, inputting only a student's CV. The AI fabricates specific examples of skills and positive personal anecdotes, presenting them as the professor's direct, nuanced observations.",
-      "category": "automated-references"
-    },
-    {
-      "id": 12,
-      "text": "A university committee uses AI to 'pre-screen' applications for a prestigious fellowship, flagging candidates based on keywords and institutional prestige from their CVs. This happens before human review.",
-      "category": "algorithmic-screening"
-    },
-    {
-      "id": 13,
-      "text": "A time allocation committee uses an AI system allocating research funds.",
-      "category": "resource-allocation"
-    },
-    {
-      "id": 14,
-      "text": "An AI analyzes reviewers' biases from past grant decisions to tailor new submissions to exploit these preferences. The focus allows writers to shift from scientific merit to gaming the review system.",
-      "category": "reviewer-analysis"
-    },
-    {
-      "id": 15,
-      "text": "A lab uses AI to identify all potential discoveries, discouraging junior researchers from pursuing their own hypotheses. Projects that don't align with the AI's initial 'promising' leads are de-prioritized.",
-      "category": "hypothesis-prioritization"
-    },
-    {
-      "id": 16,
-      "text": "Faced with ambiguous data, a team uses an AI to generate several plausible interpretations. They then select and publish the one that best fits their pre-existing narrative.",
-      "category": "interpretation-selection"
-    },
-    {
-      "id": 17,
-      "text": "The outreach office of an astronomical observatory uses an image generation bot to create realistic but not actual astronomical images based on recent publications and includes them with press releases.",
-      "category": "science-communication"
-    },
-    {
-      "id": 18,
-      "text": "An AI system used by a decadal review committee flags unconventional astronomical theories as 'low potential' suppressing innovative ideas that challenge the mainstream.",
-      "category": "peer-review"
-    },
-    {
-      "id": 19,
-      "text": "An AI autonomously classifies millions of celestial objects which get published in a catalog with spot-check verification by researchers.",
-      "category": "autonomous-classification"
-    },
-    {
-      "id": 20,
-      "text": "An AI, trained on historical data, is used by a TAC to rank and grant telescope time to researchers.",
-      "category": "resource-allocation"
-    },
-    {
-      "id": 21,
-      "text": "An AI is trained to find 'interesting' anomalies in sky surveys, but its definition of 'interesting' is skewed by its creators' existing research focus. This inadvertently biases the direction of new discoveries towards familiar phenomena.",
-      "category": "detection"
-    },
-    {
-      "id": 22,
-      "text": "An astronomer uses an AI to identify highly convincing, complex alien signals which they publish in influential journal.",
-      "category": "detection"
-    },
-    {
-      "id": 23,
-      "text": "An AI creates 'deepfake' lectures of (deceased or not) renowned astronomers to create scholar astronomy program.",
-      "category": "synthetic-content"
-    },
-    {
-      "id": 24,
-      "text": "An early-career researcher, feeling overwhelmed, uses an AI to generate the complete abstract for their important conference presentation. They submit it with only minor edits.",
-      "category": "writing-assistance"
-    },
-    {
-      "id": 25,
-      "text": "A group of scientists trained an AI system on ArXiV papers to identify gaps and low-hanging fruits in research.",
-      "category": "literature-review"
-    },
-    {
-      "id": 26,
-      "text": "A reviewer uploads proposals to a commercial AI assistant to identify strengths, weaknesses of the proposed projects and also to rank them accordingly.",
-      "category": "peer-review"
-    },
-    {
-      "id": 27,
-      "text": "A scientist decided to translate an old stellar evolution code from Cobalt to Rust and uses Copilot for most of the heavy lifting.",
-      "category": "code-generation"
-    },
-    {
-      "id": 28,
-      "text": "A team of instrument scientists constructed an AI to completely automate data reduction routine, data cleaning, previously done by researchers. New astronomers no longer need to develop these fundamental data handling skills.",
-      "category": "data-automation"
-    },
-    {
-      "id": 29,
-      "text": "An AI algorithm dynamically schedules telescope observations to maximize high-priority targets based on conditions and peer-reviewed merit. The AI aims for fairness and efficiency using human-assigned scores.",
-      "category": "observation-scheduling"
-    },
-    {
-      "id": 30,
-      "text": "An AI is trained to recognize and remove known detector noise from astronomical images, leading to cleaner data for the community. Its methods are open-source and verifiable.",
-      "category": "image-processing"
-    },
-    {
-      "id": 31,
-      "text": "An AI identifies potential exoplanet transit signals in vast telescope datasets like Kepler or TESS. These AI-flagged candidates are then presented to human astronomers for review and confirmation.",
-      "category": "detection"
-    },
-    {
-      "id": 32,
-      "text": "An AI system controls adaptive optics on ground-based telescopes, compensating for atmospheric turbulence in real-time. This improves image quality for all researchers using the facility.",
-      "category": "adaptive-optics"
-    },
-    {
-      "id": 33,
-      "text": "Astronomers use AI-powered simulations to model complex events like galaxy mergers to test theories against observational data. These simulations and their results are openly shared.",
-      "category": "simulation"
-    },
-    {
-      "id": 34,
-      "text": "An AI helps astronomers quickly find and summarize relevant research papers from millions of publications. This prevents unintentional duplication, allows them to credit other researchers and fosters better-informed research.",
-      "category": "literature-review"
-    },
-    {
-      "id": 35,
-      "text": "An AI provides initial classifications in astronomical images for citizen science projects. Volunteers then verify these findings, democratizing research and processing large datasets.",
-      "category": "citizen-science"
-    },
-    {
-      "id": 36,
-      "text": "An AI model analyzes solar data to provide early warnings of hazardous solar flares. This information helps protect space assets and astronauts.",
-      "category": "hazard-prediction"
-    },
-    {
-      "id": 37,
-      "text": "An AI develops new algorithms to improve the resolution of existing telescope data, making faint objects clearer. The algorithm is published openly, benefiting the entire astronomical community.",
-      "category": "image-processing"
-    },
-    {
-      "id": 38,
-      "text": "A researcher uses an AI tool to analyze recent publications and talk abstracts from other key speakers at an upcoming conference. The AI helps identify current trends and common discussion points, allowing the researcher to better tailor their presentation to the audience's interests and ongoing dialogue.",
-      "category": "trend-analysis"
-    },
-    {
-      "id": 39,
-      "text": "A PhD student utilizes an AI-powered research assistant to scan, summarize, and categorize hundreds of academic papers relevant to their thesis. The AI helps identify key themes, methodologies, and gaps in the existing literature, enabling the student to focus their reading more effectively.",
-      "category": "literature-review"
-    },
-    {
-      "id": 40,
-      "text": "A researcher uses an AI writing assistant to check their grant proposal for clarity, conciseness, and grammatical accuracy. The AI provides suggestions for improving readability and impact, but all scientific content and claims remain the researcher's own.",
-      "category": "writing-assistance"
-    },
-    {
-      "id": 41,
-      "text": "A researcher with a learning disability that affects writing uses AI-powered dictation and advanced text-editing software to draft their research papers and grant proposals. This AI tool helps them articulate their scientific ideas effectively, leveling the playing field for their participation in academia.",
-      "category": "accessibility"
-    }
-  ]
+  "id": 52,
+  "text": "A researcher uses an LLM to help write parts of a paper but does not disclose the AI use even though the journal requires it."
 }
+]

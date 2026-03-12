@@ -15,19 +15,19 @@ function getRandomUnique(arr, count) {
   return shuffled.slice(0, count)
 }
 
-export function useAffirmations(surveyId = null) {
-  const affirmationsData = surveyId 
+export function useAffirmations(surveyId = null, count = 3) {
+  const affirmationsData = surveyId
     ? getAffirmationsForSurvey(surveyId)
     : getAllAffirmations()
-  
-  const [affirmations, setAffirmations] = useState(() => 
-    getRandomUnique(affirmationsData, 3)
+
+  const [affirmations, setAffirmations] = useState(() =>
+    getRandomUnique(affirmationsData, count)
   )
 
   const getThreeRandom = useCallback(() => {
     const data = surveyId ? getAffirmationsForSurvey(surveyId) : getAllAffirmations()
-    return getRandomUnique(data, 3)
-  }, [surveyId])
+    return getRandomUnique(data, count)
+  }, [surveyId, count])
 
   const shuffle = useCallback(() => {
     setAffirmations(getRandomUnique(affirmationsData, 3))

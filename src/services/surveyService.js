@@ -10,15 +10,10 @@ export function getDefaultSurvey() {
 }
 
 export function getAffirmationsForSurvey(surveyId) {
-  const affirmations = affirmationsData.affirmations || []
-  
-  if (!surveyId) {
-    return affirmations
-  }
-  
-  return affirmations.filter(a => a.surveyId === surveyId || !a.surveyId)
+  const affirmations = Array.isArray(affirmationsData) ? affirmationsData : (affirmationsData.affirmations || [])
+  return affirmations
 }
 
 export function getAllAffirmations() {
-  return affirmationsData.affirmations || []
+  return Array.isArray(affirmationsData) ? affirmationsData : (affirmationsData.affirmations || [])
 }

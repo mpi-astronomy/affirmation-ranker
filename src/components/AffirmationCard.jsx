@@ -1,11 +1,11 @@
-import { Card, CardContent, Chip, Box, Typography } from '@mui/material'
+import { Card, CardContent, Box, Typography } from '@mui/material'
 import ReactMarkdown from 'react-markdown'
 
 function AffirmationCard({ affirmation, showRank = false, rankPosition }) {
   return (
-    <Card 
+    <Card
       elevation={2}
-      sx={{ 
+      sx={{
         transition: 'transform 0.2s ease, box-shadow 0.2s ease',
         '&:hover': {
           transform: 'translateY(-2px)',
@@ -13,20 +13,9 @@ function AffirmationCard({ affirmation, showRank = false, rankPosition }) {
         }
       }}
     >
-      <CardContent sx={{ p: { xs: 2, sm: 3 } }}>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 2, mb: 2 }}>
-          <Chip 
-            label={affirmation.category}
-            size="small"
-            sx={{ 
-              textTransform: 'capitalize',
-              bgcolor: 'primary.light',
-              color: 'primary.contrastText',
-              fontWeight: 500,
-              fontSize: { xs: '0.75rem', sm: '0.875rem' }
-            }}
-          />
-          {showRank && rankPosition && (
+      <CardContent sx={{ p: { xs: 1.5, sm: 2 }, py: { xs: 1, sm: 1.5 } }}>
+        {showRank && rankPosition && (
+          <Box sx={{ display: 'flex', justifyContent: 'flex-end', mb: 1 }}>
             <Box
               sx={{
                 display: 'flex',
@@ -43,14 +32,14 @@ function AffirmationCard({ affirmation, showRank = false, rankPosition }) {
             >
               {rankPosition}
             </Box>
-          )}
-        </Box>
-        <Typography 
-          variant="body1" 
+          </Box>
+        )}
+        <Typography
+          variant="body2"
           component="div"
-          sx={{ 
-            fontSize: { xs: '0.95rem', sm: '1.1rem' },
-            lineHeight: 1.6,
+          sx={{
+            fontSize: { xs: '0.85rem', sm: '0.95rem' },
+            lineHeight: 1.4,
             color: 'text.primary'
           }}
         >
