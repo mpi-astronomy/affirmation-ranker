@@ -62,7 +62,7 @@ function LandingPage() {
       <Button
         variant="contained"
         size="large"
-        onClick={() => navigate("/rank")}
+        onClick={() => navigate("/rank-abs")}
         sx={{
           px: { xs: 5, sm: 6 },
           py: { xs: 1.5, sm: 1.5 },

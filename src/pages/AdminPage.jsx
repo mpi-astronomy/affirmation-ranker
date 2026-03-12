@@ -58,9 +58,9 @@ function AdminPage() {
     return new Date(timestamp).toLocaleString()
   }
 
-  const formatRanking = (affirmationIds) => {
-    if (!affirmationIds || !Array.isArray(affirmationIds)) return 'N/A'
-    return affirmationIds.slice(0, 3).join(', ') + (affirmationIds.length > 3 ? '...' : '')
+  const formatScores = (scores) => {
+    if (!scores || !Array.isArray(scores)) return 'N/A'
+    return scores.map(s => `#${s.id}:${s.playerScore}`).join(', ')
   }
 
   const formatDuration = (duration) => {
@@ -71,15 +71,20 @@ function AdminPage() {
 
   const exportCSV = (results) => {
     if (!results || results.length === 0) return
-    
-    const headers = ['timestamp', 'surveyId', 'affirmationIds', 'duration', 'sessionId']
-    const rows = results.map(result => [
-      result.timestamp || '',
-      result.surveyId || 'Default',
-      Array.isArray(result.affirmationIds) ? result.affirmationIds.join(';') : '',
-      result.duration || '',
-      result.sessionId || ''
-    ])
+
+    // Collect all card ids seen across all results for column headers
+    const allIds = [...new Set(results.flatMap(r => (r.scores || []).map(s => s.id)))].sort((a, b) => a - b)
+    const headers = ['timestamp', 'surveyId', 'sessionId', 'duration_s', ...allIds.map(id => `card_${id}`)]
+    const rows = results.map(result => {
+      const scoreMap = Object.fromEntries((result.scores || []).map(s => [s.id, s.playerScore]))
+      return [
+        result.timestamp || '',
+        result.surveyId || 'Default',
+        result.sessionId || '',
+        result.duration ? Math.round(result.duration / 1000) : '',
+        ...allIds.map(id => scoreMap[id] ?? '')
+      ]
+    })
     
     const csvContent = [
       headers.join(','),
@@ -189,7 +194,7 @@ function AdminPage() {
                   <TableRow>
                     <TableCell>Timestamp</TableCell>
                     <TableCell>Survey</TableCell>
-                    <TableCell>Ranking</TableCell>
+                    <TableCell>Scores (id:playerScore)</TableCell>
                     <TableCell>Duration</TableCell>
                   </TableRow>
                 </TableHead>
@@ -198,7 +203,7 @@ function AdminPage() {
                     <TableRow key={result.id || result.sessionId}>
                       <TableCell>{formatDate(result.timestamp)}</TableCell>
                       <TableCell>{result.surveyId || 'Default'}</TableCell>
-                      <TableCell>{formatRanking(result.affirmationIds)}</TableCell>
+                      <TableCell>{formatScores(result.scores)}</TableCell>
                       <TableCell>{formatDuration(result.duration)}</TableCell>
                     </TableRow>
                   ))}

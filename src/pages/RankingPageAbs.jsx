@@ -80,7 +80,7 @@ function RankingPage() {
 
   const handleSubmit = () => {
     const duration = startTimeRef.current ? Date.now() - startTimeRef.current : 0
-    const rankingData = affirmations.map(card => ({ ...card, score: cardScores[card.id] }))
+    const rankingData = affirmations.map(card => ({ ...card, refScore: card.score, score: cardScores[card.id] }))
     submitRankingResults(rankingData, duration, SURVEY_ID)
     navigate('/success', { state: { ranking: rankingData, duration } })
   }

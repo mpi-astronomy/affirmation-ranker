@@ -12,14 +12,15 @@ function generateUUID() {
   })
 }
 
-export async function submitRankingResults(affirmationIds, duration, surveyId = null) {
+export async function submitRankingResults(rankingData, duration, surveyId = null) {
   const result = {
     sessionId: generateUUID(),
     timestamp: new Date().toISOString(),
-    affirmationIds,
+    surveyId,
     duration,
     version: APP_VERSION,
-    surveyId
+    scores: rankingData.map(({ id, score }) => ({ id, playerScore: score })),
+    fullResults: rankingData,
   }
 
   try {

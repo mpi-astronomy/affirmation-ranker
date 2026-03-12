@@ -13,10 +13,10 @@ const ZONES = [
 ]
 
 const getZoneEmoji = (score) => {
-  if (score >= 80) return '🟢'
-  if (score >= 60) return '🟡'
-  if (score >= 40) return '🟠'
-  if (score >= 20) return '🔴'
+  if (score <= 20) return '🟢'
+  if (score <= 40) return '🟡'
+  if (score <= 60) return '🟠'
+  if (score <= 80) return '🔴'
   return '🚨'
 }
 
@@ -35,7 +35,7 @@ function RankingList({ affirmations, cardScores, onScoreChange, onAllRated, surf
     const rect = scaleRef.current.getBoundingClientRect()
     const y = clientY - rect.top
     const clamped = Math.max(0, Math.min(rect.height, y))
-    return Math.round(100 - (clamped / rect.height) * 100)
+    return Math.round((clamped / rect.height) * 100)
   }
 
   const placeCard = (clientY) => {
@@ -174,7 +174,7 @@ function RankingList({ affirmations, cardScores, onScoreChange, onAllRated, surf
             width: 24, height: '20%',
             bgcolor: zone.color,
             borderRadius: i === 0 ? '4px 4px 0 0' : i === ZONES.length - 1 ? '0 0 4px 4px' : 0,
-            opacity: hoverScore !== null && Math.floor((100 - hoverScore) / 20) === i ? 1 : 0.75,
+            opacity: hoverScore !== null && Math.floor(hoverScore / 20) === i ? 1 : 0.75,
             transition: 'opacity 0.1s',
           }} />
         ))}
@@ -209,7 +209,7 @@ function RankingList({ affirmations, cardScores, onScoreChange, onAllRated, surf
         {/* Hover indicator */}
         {hoverScore !== null && (
           <Box sx={{
-            position: 'absolute', left: 40, top: `${100 - hoverScore}%`,
+            position: 'absolute', left: 40, top: `${hoverScore}%`,
             transform: 'translateY(-50%)', pointerEvents: 'none',
           }}>
             <Box sx={{ width: 40, height: 3, bgcolor: 'rgba(0,0,0,0.45)', borderRadius: 1 }} />
@@ -227,7 +227,7 @@ function RankingList({ affirmations, cardScores, onScoreChange, onAllRated, surf
               sx={{
                 position: 'absolute',
                 left: 80,
-                top: `${100 - score}%`,
+                top: `${score}%`,
                 transform: 'translateY(-50%)',
                 width: `${100 - LEFT_PANEL_VW - 12}vw`,
                 zIndex: 3,
